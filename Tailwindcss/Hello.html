@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechInfo</title>
+    <link rel="icon" href="Images/logo.png" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      />
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+      <style>
+          .body {
+              background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.4)), url(../Images/touch.jpg), no-repeat;
+              background-size: cover;
+              background-position: center;
+            }
+            </style>
+  </head>
+  <body class="font-sans text-gray-800">
+      <section>
+          <section class="body relative h-screen bg-cover bg-center bg-[url('../Images/touch.jpg')]">
+      <header class="absolute top-0 left-0 w-full bg-blue-500 h-20 flex items-center">
+          <nav class="container mx-auto flex justify-between items-center px-4">
+              <input type="checkbox" id="check" class="hidden" />
+                  <label for="check" class="cursor-pointer text-white text-2xl md:hidden">
+                <i class="fa-solid fa-bars" id="menu_bar_icon"></i>
+            </label>
+              <label class="text-white text-3xl font-bold">InfoTech</label>
+              <ul class="hidden md:flex space-x-6 text-white">
+                <li><a href="#" class="hover:bg-blue-700 p-2 rounded">Home</a></li>
+                <li><a href="#about" class="hover:bg-blue-700 p-2 rounded">About</a></li>
+                <li><a href="#trends" class="hover:bg-blue-700 p-2 rounded">Trends</a></li>
+                <li><a href="#new" class="hover:bg-blue-700 p-2 rounded">New</a></li>
+            </ul>
+        </nav>
+    </header>
+          <div class="mx-auto flex flex-col items-center justify-center text-center h-full text-white px-4 w-full">
+            <h1 class="text-6xl font-bold mb-4">.Trends .Innovations .FastInfo</h1>
+            <p class="max-w-lg text-white text-lg">
+            Get more information about daily updates on todays tech innovation remotely.
+            </p>
+            <button class="py-3 px-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-800 focus:ring-1 focus:ring-violet-200 focus:outline-none my-2">Get Started</button>
+          </div>
+        </section>
+        <div class="menu hidden fixed top-0 left-0 w-64 h-full bg-white p-4 z-50 flex flex-col">
+          <button id="closeBtn" class="mb-4">close</button>
+          <ul class="space-y-4">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#trends">Trends</a></li>
+            <li><a href="#new">New</a></li>
+          </ul>
+        </div>
+        <section id="about" class="py-16">
+          <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold mb-12">About Us</h1>
+            <div class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
+              <div class="card border border-gray-300 p-4 shadow-lg rounded-lg w-80">
+                <h2 class="text-2xl font-semibold mb-4">Trends</h2>
+                <p>We provide insightful analysis, expert commentary, and thought-provoking discussions on emerging technology trends.</p>
+              </div>
+              <div class="card border border-gray-300 p-4 shadow-lg rounded-lg w-80">
+                <h2 class="text-2xl font-semibold mb-4">Innovations</h2>
+                <p>We provide innovative solutions tailored to meet the demands of tomorrow's digital landscape.</p>
+              </div>
+              <div class="card border border-gray-300 p-4 shadow-lg rounded-lg w-80">
+                <h2 class="text-2xl font-semibold mb-4">Fast Info</h2>
+                <p>We provide fast and reliable information to keep you ahead in the ever-evolving tech world.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="trends" class="py-16 bg-gray-100">
+          <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-center mb-12">Trends</h1>
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="flex flex-col">
+                <h2 class="text-2xl font-semibold mb-4">AI and Machine Learning Advancements</h2>
+                <p class="flex-1 mb-4">
+                  In 2024, AI breakthroughs redefine industries with advanced capabilities in deep learning, natural language processing, and robotics. From autonomous vehicles to personalized medicine, AI transforms how we live and work, pushing the boundaries of innovation. This era heralds a future where intelligence and automation revolutionize every sector.
+                </p>
+                <img src="../Images/ai.jpg" alt="AI picture" class="w-full h-60 object-cover rounded-lg" />
+              </div>
+              <div class="flex flex-col">
+                <h2 class="text-2xl font-semibold mb-4">Blockchain Evolution</h2>
+                <p class="flex-1 mb-4">
+                  In 2024, blockchain expands beyond cryptocurrencies, powering decentralized finance and transparent supply chains. Interoperability between blockchain networks becomes crucial, enhancing communication. Governments and enterprises widely adopt blockchain for secure transactions and digital identity management, heralding a new era of trust and efficiency.
+                </p>
+                <img src="../Images/blockchain.jpeg" alt="Blockchain picture" class="w-full h-60 object-cover rounded-lg" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="new" class="py-16">
+          <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-center mb-12">New</h1>
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="flex flex-col">
+                <h2 class="text-2xl font-semibold mb-4">Sora AI</h2>
+                <p class="flex-1 mb-4">
+                  SORA AI is an advanced platform employing state-of-the-art algorithms for data analysis and decision-making. It provides predictive analytics, natural language processing, and machine learning to optimize processes and drive insights. Businesses leverage SORA AI for strategic planning and innovation, benefiting from its adaptive and scalable architecture that enhances efficiency and innovation across industries.
+                </p>
+                <img src="../Images/Sora.jpg" alt="Sora AI" class="w-full h-60 object-cover rounded-lg" />
+              </div>
+            </div>
+          </div>
+        </section>
+    </section>
+
+    <footer class="bg-black text-white py-8">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+        <div class="mb-8 md:mb-0">
+          <h3 class="text-xl font-bold">TechInfo</h3>
+          <p>&copy; Copyright 2024</p>
+        </div>
+        <div class="flex flex-col items-center mb-8 md:mb-0">
+          <h2 class="text-xl font-bold mb-4">Quick Links</h2>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#trends" class="hover:underline">Trends</a></li>
+            <li><a href="#new" class="hover:underline">New</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col items-center">
+          <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+          <ul class="space-y-2">
+            <li>Email: example@example.com</li>
+            <li>Phone: +1234567890</li>
+            <li>Address: 123 Street, City, Country</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
